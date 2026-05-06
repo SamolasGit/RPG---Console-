@@ -28,7 +28,7 @@ int main() {
         
         system("cls");
         cout << "========================================" << endl;
-        cout << "   AVENTURA NA FLORESTA MALDITA" << endl;
+        cout << "   A FUNÇÃO MALDITA" << endl;
         cout << "========================================" << endl;
         cout << "  1 - Iniciar Jogo" << endl;
         cout << "  2 - Regras" << endl;
@@ -46,7 +46,6 @@ int main() {
         if (opcao == 2) {
             system("cls");
             cout << "======== REGRAS ========" << endl;
-            cout << "- Voce ira percorrer 10 capitulos na Floresta Maldita." << endl;
             cout << "- A cada decisao seus atributos serao afetados." << endl;
             cout << "- A cada 5 jogadas um DESAFIO aparece (dado aleatorio)." << endl;
             cout << "- Se Vida = 0, voce morre e volta ao menu." << endl;
@@ -63,9 +62,8 @@ int main() {
             cout << "Disciplina  : Algoritmos e Programacao" << endl;
             cout << "Professor   : Crístina Ono Horita" << endl;
             cout << "Desenvolvedores:" << endl;
-            cout << "   - Aluno 1" << endl;
-            cout << "   - Aluno 2" << endl;
-            cout << "   - Aluno 3" << endl;
+            cout << "   - Samuel Baron" << endl;
+            cout << "   - Raphael Kotzias" << endl;
             cout << "========================" << endl;
             system("pause");
         }
@@ -93,7 +91,7 @@ int main() {
             cin  >> nomeJogador;
 
             cout << "\nBem-vindo, " << nomeJogador << "!" << endl;
-            cout << "Sua jornada pela Floresta Maldita comeca agora..." << endl;
+            cout << "Sua jornada pela Função Maldita comeca agora..." << endl;
             cout << "\nAtributos iniciais:" << endl;
             cout << "  Vida:  " << vida  << endl;
             cout << "  Forca: " << forca << endl;
