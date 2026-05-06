@@ -8,16 +8,12 @@ int main() {
     
     srand(time(NULL));
 
-    
-    
-    
     string nomeJogador = "";   
     int vida    = 3;           
     int forca   = 10;          
     int sorte   = 5;           
     int ouro    = 0;           
 
-    
     int opcao       = 0;       
     int jogadas     = 0;       
     int dado        = 0;       
@@ -27,9 +23,6 @@ int main() {
     int capLoop     = 1;       
     int vivo        = 1;       
 
-    
-    
-    
     while (menuLoop == 1) {
 
         
@@ -45,13 +38,11 @@ int main() {
         cout << "Escolha uma opcao: ";
         cin  >> opcao;
 
-        
         while (opcao < 1 || opcao > 4) {
             cout << "Opcao invalida! Digite entre 1 e 4: ";
             cin  >> opcao;
         }
 
-        
         if (opcao == 2) {
             system("cls");
             cout << "======== REGRAS ========" << endl;
@@ -64,7 +55,6 @@ int main() {
             system("pause");
         }
 
-        
         else if (opcao == 3) {
             system("cls");
             cout << "======== SOBRE ========" << endl;
@@ -80,15 +70,12 @@ int main() {
             system("pause");
         }
 
-        
         else if (opcao == 4) {
             cout << "Encerrando o jogo. Ate logo!" << endl;
             menuLoop = 0; 
         }
 
-        
-        
-        
+
         else if (opcao == 1) {
 
             
@@ -121,10 +108,7 @@ int main() {
 
                 system("cls");
                 capLoop = 1; 
-
-                
-                
-                
+   
                 if (capitulo == 1) {
                     cout << "=== CAPITULO 1: A Entrada da Floresta ===" << endl;
                     cout << nomeJogador << " chega diante de uma floresta escura." << endl;
@@ -133,8 +117,7 @@ int main() {
                     cout << "2 - Entrar pela passagem sombria" << endl;
                     cout << "Escolha: ";
                     cin  >> opcao;
-
-                    
+      
                     while (opcao < 1 || opcao > 2) {
                         cout << "Opcao invalida! Digite 1 ou 2: ";
                         cin  >> opcao;
