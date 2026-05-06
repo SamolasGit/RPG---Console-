@@ -1,11 +1,3 @@
-/*
-=======================================================================
-  AVENTURA NA FLORESTA MALDITA
-  Trabalho Prático - Algoritmos e Programação - UNIVALI
-  Profª Cristina Ono Horita
-=======================================================================
-*/
-
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
@@ -13,34 +5,34 @@ using namespace std;
 
 int main() {
 
-    // === SEMENTE ALEATÓRIA ===
+    
     srand(time(NULL));
 
-    // =====================================================
-    // VARIÁVEIS DE ESTADO DO PERSONAGEM
-    // =====================================================
-    string nomeJogador = "";   // Nome do jogador
-    int vida    = 3;           // Quantidade de vidas
-    int forca   = 10;          // Força do personagem
-    int sorte   = 5;           // Sorte do personagem
-    int ouro    = 0;           // Ouro acumulado
+    
+    
+    
+    string nomeJogador = "";   
+    int vida    = 3;           
+    int forca   = 10;          
+    int sorte   = 5;           
+    int ouro    = 0;           
 
-    // Variáveis auxiliares
-    int opcao       = 0;       // Opção do menu / escolha do jogador
-    int jogadas     = 0;       // Contador de jogadas (desafio a cada 5)
-    int dado        = 0;       // Resultado do dado (1-6)
-    int capitulo    = 1;       // Capítulo atual (1 a 10)
-    int jogar       = 1;       // Controle do loop principal (1=sim, 0=não)
-    int menuLoop    = 1;       // Controle do loop do menu
-    int capLoop     = 1;       // Controle do loop dentro de cada capítulo
-    int vivo        = 1;       // 1 = vivo, 0 = morreu
+    
+    int opcao       = 0;       
+    int jogadas     = 0;       
+    int dado        = 0;       
+    int capitulo    = 1;       
+    int jogar       = 1;       
+    int menuLoop    = 1;       
+    int capLoop     = 1;       
+    int vivo        = 1;       
 
-    // =====================================================
-    // LOOP PRINCIPAL DO MENU
-    // =====================================================
+    
+    
+    
     while (menuLoop == 1) {
 
-        // --- EXIBIÇÃO DO MENU ---
+        
         system("cls");
         cout << "========================================" << endl;
         cout << "   AVENTURA NA FLORESTA MALDITA" << endl;
@@ -53,13 +45,13 @@ int main() {
         cout << "Escolha uma opcao: ";
         cin  >> opcao;
 
-        // --- VALIDAÇÃO DA ENTRADA DO MENU ---
+        
         while (opcao < 1 || opcao > 4) {
             cout << "Opcao invalida! Digite entre 1 e 4: ";
             cin  >> opcao;
         }
 
-        // ---- REGRAS ----
+        
         if (opcao == 2) {
             system("cls");
             cout << "======== REGRAS ========" << endl;
@@ -72,7 +64,7 @@ int main() {
             system("pause");
         }
 
-        // ---- SOBRE ----
+        
         else if (opcao == 3) {
             system("cls");
             cout << "======== SOBRE ========" << endl;
@@ -88,18 +80,18 @@ int main() {
             system("pause");
         }
 
-        // ---- SAIR ----
+        
         else if (opcao == 4) {
             cout << "Encerrando o jogo. Ate logo!" << endl;
-            menuLoop = 0; // Encerra o loop do menu (e o programa)
+            menuLoop = 0; 
         }
 
-        // ====================================================
-        // ---- INICIAR JOGO ----
-        // ====================================================
+        
+        
+        
         else if (opcao == 1) {
 
-            // --- Reset dos atributos a cada nova partida ---
+            
             vida    = 3;
             forca   = 10;
             sorte   = 5;
@@ -108,7 +100,7 @@ int main() {
             capitulo = 1;
             vivo    = 1;
 
-            // --- Solicita o nome do jogador ---
+            
             system("cls");
             cout << "Digite seu nome, aventureiro: ";
             cin  >> nomeJogador;
@@ -122,17 +114,17 @@ int main() {
             cout << "  Ouro:  " << ouro  << endl;
             system("pause");
 
-            // ====================================================
-            // GAME LOOP - percorre os capítulos enquanto vivo
-            // ====================================================
+            
+            
+            
             while (capitulo <= 10 && vivo == 1) {
 
                 system("cls");
-                capLoop = 1; // reseta controle do capítulo
+                capLoop = 1; 
 
-                // ============================================
-                // CAPÍTULO 1 - Entrada da Floresta
-                // ============================================
+                
+                
+                
                 if (capitulo == 1) {
                     cout << "=== CAPITULO 1: A Entrada da Floresta ===" << endl;
                     cout << nomeJogador << " chega diante de uma floresta escura." << endl;
@@ -142,21 +134,21 @@ int main() {
                     cout << "Escolha: ";
                     cin  >> opcao;
 
-                    // Validação
+                    
                     while (opcao < 1 || opcao > 2) {
                         cout << "Opcao invalida! Digite 1 ou 2: ";
                         cin  >> opcao;
                     }
 
                     if (opcao == 1) {
-                        // Caminho da trilha iluminada
+                        
                         cout << "\nVoce segue pela trilha. Encontra uma bolsa de moedas!" << endl;
                         ouro  += 5;
                         sorte += 1;
                         cout << "[+5 Ouro] [+1 Sorte]" << endl;
                     }
                     else {
-                        // Caminho sombrio
+                        
                         cout << "\nA passagem sombria te assusta. Voce tropeça e perde energia." << endl;
                         vida  -= 1;
                         forca -= 1;
@@ -167,9 +159,9 @@ int main() {
                     capitulo++;
                 }
 
-                // ============================================
-                // CAPÍTULO 2 - O Riacho Encantado
-                // ============================================
+                
+                
+                
                 else if (capitulo == 2) {
                     cout << "=== CAPITULO 2: O Riacho Encantado ===" << endl;
                     cout << "Voce encontra um riacho cristalino bloqueando o caminho." << endl;
@@ -206,9 +198,9 @@ int main() {
                     capitulo++;
                 }
 
-                // ============================================
-                // CAPÍTULO 3 - A Cabana Abandonada
-                // ============================================
+                
+                
+                
                 else if (capitulo == 3) {
                     cout << "=== CAPITULO 3: A Cabana Abandonada ===" << endl;
                     cout << "Uma cabana misteriosa aparece entre as arvores." << endl;
@@ -238,9 +230,9 @@ int main() {
                     capitulo++;
                 }
 
-                // ============================================
-                // CAPÍTULO 4 - O Mercador Misterioso
-                // ============================================
+                
+                
+                
                 else if (capitulo == 4) {
                     cout << "=== CAPITULO 4: O Mercador Misterioso ===" << endl;
                     cout << "Um mercador encapuzado oferece itens estranhos." << endl;
@@ -286,9 +278,9 @@ int main() {
                     capitulo++;
                 }
 
-                // ============================================
-                // CAPÍTULO 5 - A Armadilha da Aranha Gigante
-                // ============================================
+                
+                
+                
                 else if (capitulo == 5) {
                     cout << "=== CAPITULO 5: A Aranha Gigante ===" << endl;
                     cout << "Uma aranha colossal bloqueia o caminho!" << endl;
@@ -303,7 +295,7 @@ int main() {
                     }
 
                     if (opcao == 1) {
-                        // Luta baseada na forca
+                        
                         if (forca >= 8) {
                             cout << "\nSua forca e grande! Voce derrota a aranha e encontra seu tesouro." << endl;
                             ouro  += 15;
@@ -334,9 +326,9 @@ int main() {
                     capitulo++;
                 }
 
-                // ============================================
-                // CAPÍTULO 6 - O Cemitério Encantado
-                // ============================================
+                
+                
+                
                 else if (capitulo == 6) {
                     cout << "=== CAPITULO 6: O Cemiterio Encantado ===" << endl;
                     cout << "Voce entra num cemiterio coberto de nevoa." << endl;
@@ -373,9 +365,9 @@ int main() {
                     capitulo++;
                 }
 
-                // ============================================
-                // CAPÍTULO 7 - O Dragão Adormecido
-                // ============================================
+                
+                
+                
                 else if (capitulo == 7) {
                     cout << "=== CAPITULO 7: O Dragao Adormecido ===" << endl;
                     cout << "Um enorme dragao dorme sobre uma pilha de ouro!" << endl;
@@ -390,7 +382,7 @@ int main() {
                     }
 
                     if (opcao == 1) {
-                        // Resultado baseado em sorte
+                        
                         if (sorte >= 6) {
                             cout << "\nSua sorte e incrivel! Voce pega o ouro sem acordar o dragao." << endl;
                             ouro  += 20;
@@ -413,9 +405,9 @@ int main() {
                     capitulo++;
                 }
 
-                // ============================================
-                // CAPÍTULO 8 - O Labirinto das Ilusões
-                // ============================================
+                
+                
+                
                 else if (capitulo == 8) {
                     cout << "=== CAPITULO 8: O Labirinto das Ilusoes ===" << endl;
                     cout << "Voce entra num labirinto de espelhos que confundem a mente." << endl;
@@ -459,9 +451,9 @@ int main() {
                     capitulo++;
                 }
 
-                // ============================================
-                // CAPÍTULO 9 - A Torre do Feiticeiro
-                // ============================================
+                
+                
+                
                 else if (capitulo == 9) {
                     cout << "=== CAPITULO 9: A Torre do Feiticeiro ===" << endl;
                     cout << "Uma torre imponente emerge das arvores. O Feiticeiro Maldito mora aqui." << endl;
@@ -509,9 +501,9 @@ int main() {
                     capitulo++;
                 }
 
-                // ============================================
-                // CAPÍTULO 10 - O Coração da Floresta (FINAL)
-                // ============================================
+                
+                
+                
                 else if (capitulo == 10) {
                     cout << "=== CAPITULO 10: O Coracao da Floresta ===" << endl;
                     cout << "Voce chega ao centro da Floresta Maldita." << endl;
@@ -542,21 +534,21 @@ int main() {
                     }
 
                     jogadas++;
-                    capitulo++; // Passa de 10, encerrando o while
+                    capitulo++; 
                 }
 
-                // ============================================
-                // VERIFICAÇÃO DE DESAFIO (a cada 5 jogadas)
-                // ============================================
+                
+                
+                
                 if (jogadas % 5 == 0 && jogadas > 0) {
-                    dado = (rand() % 6) + 1; // Gera número entre 1 e 6
+                    dado = (rand() % 6) + 1; 
 
                     system("cls");
                     cout << "\n!!! DESAFIO ESPECIAL !!!" << endl;
                     cout << "Um dado magico e lancado..." << endl;
                     cout << "Resultado do dado: " << dado << endl;
 
-                    // Regras do desafio com o dado
+                    
                     if (dado == 1) {
                         cout << "AZARAO! Voce perde uma vida!" << endl;
                         vida -= 1;
@@ -592,9 +584,9 @@ int main() {
                     system("pause");
                 }
 
-                // ============================================
-                // VERIFICAÇÃO DE MORTE
-                // ============================================
+                
+                
+                
                 if (vida <= 0) {
                     system("cls");
                     cout << "========================================" << endl;
@@ -607,11 +599,11 @@ int main() {
                     cout << "Sorte final: " << sorte << endl;
                     cout << "Ouro final:  " << ouro  << endl;
                     cout << "====================================" << endl;
-                    vivo = 0; // Encerra o game loop
+                    vivo = 0; 
                     system("pause");
                 }
                 else {
-                    // Exibe status após cada capítulo
+                    
                     cout << "\n--- STATUS ATUAL ---" << endl;
                     cout << "Vida:  " << vida  << endl;
                     cout << "Forca: " << forca << endl;
@@ -621,11 +613,11 @@ int main() {
                     system("pause");
                 }
 
-            } // fim do while dos capítulos
+            } 
 
-            // ====================================================
-            // TELA FINAL (Vitória) - se passou todos os capítulos
-            // ====================================================
+            
+            
+            
             if (vivo == 1 && capitulo > 10) {
                 system("cls");
                 cout << "========================================" << endl;
@@ -633,7 +625,7 @@ int main() {
                 cout << "   VOCE VENCEU A FLORESTA MALDITA!" << endl;
                 cout << "========================================" << endl;
 
-                // Mensagem de vitória baseada nos atributos
+                
                 if (ouro >= 50 && forca >= 15) {
                     cout << "Resultado: LENDARIO! Heroi completo!" << endl;
                 }
@@ -654,9 +646,9 @@ int main() {
                 system("pause");
             }
 
-        } // fim do if opcao == 1 (jogar)
+        } 
 
-    } // fim do while do menu
+    } 
 
     return 0;
 }
