@@ -16,7 +16,6 @@ int main() {
 
     int opcao       = 0;       
     int jogadas     = 0;       
-    int dado        = 0;       
     int capitulo    = 1;       
     int jogar       = 1;       
     int menuLoop    = 1;       
@@ -47,7 +46,6 @@ int main() {
             system("cls");
             cout << "======== REGRAS ========" << endl;
             cout << "- A cada decisao seus atributos serao afetados." << endl;
-            cout << "- A cada 5 jogadas um DESAFIO aparece (dado aleatorio)." << endl;
             cout << "- Se Vida = 0, voce morre e volta ao menu." << endl;
             cout << "- Acumule Ouro e sobreviva para vencer!" << endl;
             cout << "========================" << endl;
@@ -518,56 +516,6 @@ int main() {
                     capitulo++; 
                 }
 
-                
-                
-                
-                if (jogadas % 5 == 0 && jogadas > 0) {
-                    dado = (rand() % 6) + 1; 
-
-                    system("cls");
-                    cout << "\n!!! DESAFIO ESPECIAL !!!" << endl;
-                    cout << "Um dado magico e lancado..." << endl;
-                    cout << "Resultado do dado: " << dado << endl;
-
-                    
-                    if (dado == 1) {
-                        cout << "AZARAO! Voce perde uma vida!" << endl;
-                        vida -= 1;
-                        cout << "[-1 Vida]" << endl;
-                    }
-                    else if (dado == 2) {
-                        cout << "Fraco... Perde forca." << endl;
-                        forca -= 2;
-                        cout << "[-2 Forca]" << endl;
-                    }
-                    else if (dado == 3) {
-                        cout << "Neutro. Nada acontece dessa vez." << endl;
-                    }
-                    else if (dado == 4) {
-                        cout << "Sorte boa! Ganha ouro." << endl;
-                        ouro += 8;
-                        cout << "[+8 Ouro]" << endl;
-                    }
-                    else if (dado == 5) {
-                        cout << "Grande fortuna! Forca e sorte aumentam." << endl;
-                        forca += 3;
-                        sorte += 3;
-                        cout << "[+3 Forca] [+3 Sorte]" << endl;
-                    }
-                    else if (dado == 6) {
-                        cout << "JACKPOT! O dado trouxe grande riqueza!" << endl;
-                        ouro  += 20;
-                        forca += 5;
-                        vida  += 1;
-                        cout << "[+20 Ouro] [+5 Forca] [+1 Vida]" << endl;
-                    }
-
-                    system("pause");
-                }
-
-                
-                
-                
                 if (vida <= 0) {
                     system("cls");
                     cout << "========================================" << endl;
