@@ -1,0 +1,73 @@
+lore: a professora cristina odeia funcoes pois na sua epoca de estudo, 
+ela teve um professor que cobrava muito as mesmas de forma muito rigida, o que a fez repetir a materia ate pegar ranço e passar eventualmente
+
+
+
+cap1 - A Pergunta  (deslocamento 1)
+
+nomejogador, você quer saber o porque eu odeio funcoes? isso é uma velha história que você não precisa saber, mas se me ajudar a derrotar a minha unica inimiga talvez descubra.
+você está disposto a se aventurar nessa jornada atrás de derrotar a função maldita e descobrir a verdade? claro que está, faminto por causa da curiosidade dessa forma.
+primeiramente voce deve encotra-la no final da jornada, tome esse mapa para seguir viagem.
+existem dois caminhos a sua frente ao qual pode-se iniciar a jornada, qual voce vai escolher, nomejogador?
+
+caminho 1 - um barco em um rio de divs estranhamente familiar   -   *Depois de subir no barco e circundar a montanha pelo rio de divs, voce percebe que tomou o caminho mais longo -2 sorte
+caminho 2 - uma grande montanha com uma mata densa de variáveis estranhas   -   *Depois de desbravar a mata de variáveis, você percebe que tomou o caminho mais rapido +1 forca +1 sorte
+
+
+
+cap 2 - O Porteiro (luta 1)
+
+voce se depara com um ser gigante no seu caminho em um bosque, a lendária Cobra em String!
+ela te encara com um olhar sereno, despreocupada ao reconhecer sua visita toma a iniciativa e diz
+Pequeno explorador, se quiseres passar por meu caminho terá de responder a minha charada:
+Sou invisível, mas quebro tudo quando apareço. Programadores passam horas me procurando, e quando finalmente me encontram… geralmente foi por causa de um ; esquecido.
+O que sou?
+
+caminho 1 - um bug inusitado   -   *Párabens aventureiro! resposta correta! +5 ouro
+caminho 2 - O compilador ficando raivoso   -   *Voce entendeu mesmo minha charada? -1 forca
+caminho 3 - um pinguim hacker morando dentro da RAM   -   *Não sei o que um pinguin faria nesse caso... Resposta errada. -1 vida
+
+
+
+cap 3 -  (deslocamento 2)
+
+Ao passar pela cobra gigante, voce olha ao redor e checa o mapa, encontrando dois possiveis caminhos para seguir, duas opcoes que te levarao ate o mesmo local, uma estrutura entre montanhas
+a estrutura possui um formato estranho, quase lembrando o formato de uma conexão de cabo VGA, voce tera que escolher um dos dois caminhos agora para seguir, um parece estranhamente 
+calmo e bonito, quase como se fosse uma mentira, ja o outro parece uma terra devastada que parece ter cicatrizes de guerras e devastacao de outrora
+
+caminho 1 - Voce prefere nao tomar riscos e pega o caminho do bosque ao lado da fenda  -  *voce encontra goblins federais -1 vida -2 ouro
+caminho 2 - voce acha que parece uma armadilha e entao escolhe o outro caminho, a terra desolada   -   *voce se sente estranhamente em casa +1 vida
+
+
+
+cap 4 - O Unibool de 6 pernas (luta 2)
+
+Ao chegar no meio das montanhas, voce escuta um barulho estranho, quase um galopar distante que parece se aproximar rapido demais para um cavalo comum...
+em poucos segundos surge na sua frente um unicornio feito de bools enroladas com 6 pernas, explicando a velocidade, ele parece furioso, mas voce pode tentar acalma-lo,
+enfrentalo ou se esgueirar ao redor, pois ele parece ainda nao ter te avistado
+
+caminho 1 - voce se aproxima de forma lenta, em demonstrar hostilidade   -   *Ele estranhamente cospe em voce e vai embora -1 forca
+caminho 2 - voce se prepara e decide fazer um ataque surpresa!   -   *O unibool revida cm o chifre e foge -1 vida
+caminho 3 - voce tenta usar os pilares de pedra para passar despercebido   -   *Voce passa despercebido e no caminho encontra uma bolsa recheada +10 ouro
+
+
+
+cap 5 - A Cratera (deslocamento 3)
+
+Ao atravessar o vale entre montanhas voce escorrega num deslizamento pequeno e cai em uma cratera, te levando 20 metros adiante onde te aparecem opçoes para seguir caminho, seu mapa
+mostra a cratera com 2 saidas, mas uma parece ser bem facil de seguir, ja a outra parece mais desafiadora, qual caminho voce prefere seguir? o mais dificil que parece recompensador
+ou o mais facil mas que nao parece seguro
+
+caminho 1 - Voce escolhe o caminho dificil e escala a parede da cratera   -   *saindo com uma escalada voce desenvolve seu fisico e se sente revigorado +3 forca
+caminho 2 - Talvez o caminho facil seja mais tranquilo!   -   *Felizmente voce nao se deparou com dificuldades! +2 sorte
+
+
+
+cap6 6 - O geleca (luta 3)
+
+encontrando o caminho instintivamente voce se depara com um slime grande que cheira a café, ele parece hostil mas fraco, talvez derrota-lo te recompense de alguma forma,
+tudo depende da sua escolha, lutar e correr o risco ou correr do slime antes q ele te alcance? ele parece preparado para te atacar!
+
+caminho 1 - Voce é um bravo aventureiro e decide enfrentalo!   -   *desviando do primeiro ataque voce desfere um golpe! ele se desmancha! +1 forca
+caminho 2 - Voce tenta um ataque rapido e preciso!   -   *Ao acertar o slime voce acaba preservando sua estrutura, lhe permitindo tomar o café! +2 vida
+caminho 3 - Quero testar minha velocidade!   -   *Voce é rapido mas o ataque preparado era mais! -1 vida -1 sorte
